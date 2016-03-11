@@ -10,8 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css"/>
+
+    <!-- Local Application CSS -->
     <link rel="stylesheet" href="css/style.css"/>
 
 </head>
@@ -35,29 +39,30 @@
 
             <section class="row">
 
-            <div class="col-md-12 chart">
-                <h3>Campaign Donations over $5,000 in 2015</h3>
+                <div class="col-md-12 chart">
+                    <h3>Campaign Donations over $5,000 in 2015</h3>
 
 
-                <table class="donations table table-striped table-bordered">
-                    <thead>
-                        <th class="date">Date</th>
-                        <th class="information">Info</th>
-                        <th class="amount">Amount</th>
-                    </thead>
-                    <tbody></tbody>
-                </table>
+                    <table class="donations table table-striped table-bordered">
+                        <thead>
+                            <th class="date">Date</th>
+                            <th class="committee">Committee</th>
+                            <th class="information">Donor</th>
+                            <th class="amount">Amount</th>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
 
 
-                <!--
-                    1. Create an empty table with two class names: "donations" and "table"
-                    2. Create three table columns in the table head (thead): "Date", "Info" and "Amount"
-                    2. Us your script.js file to populate the table body (tbody) with values from the contributions data. 
-                    3. Use CSS to right align the dollar amounts.
-                    4. Title your page appropriately and add your byline.
-                -->
+                    <!--
+                        1. Create an empty table with two class names: "donations" and "table"
+                        2. Create three table columns in the table head (thead): "Date", "Info" and "Amount"
+                        2. Us your script.js file to populate the table body (tbody) with values from the contributions data. 
+                        3. Use CSS to right align the dollar amounts.
+                        4. Title your page appropriately and add your byline.
+                    -->
 
-            </div>
+                </div>
 
             </section>
 
@@ -79,8 +84,15 @@
 
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+    <!-- DataTables JS -->
+    <script src="http://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+
+    <!-- Moment JS -->
+    <script src="js/moment.min.js"></script>
+
+    <!-- Our local application JS -->
     <script src="js/script.js"></script>
 
 </body>

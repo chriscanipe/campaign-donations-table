@@ -5,6 +5,10 @@ Hint: You'll want to assign a class to the associated <th> and <td> tags
 in your index.html and script.js files. */
 
 
+table.donations {
+	table-layout: fixed;
+}
+
 th.amount, td.amount {
 	text-align: right;
 }
